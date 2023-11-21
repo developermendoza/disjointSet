@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disjoint-Set (Union-Find)</title>
+  </head>
+  <body>
+    <h1>Disjoint-Set (Union-Find)</h1>
+    <p>
+      The Disjoint-Set data structure, also known as Union-Find, is designed to
+      efficiently keep track of a partition of a set into disjoint subsets. It
+      supports two main operations: union and find
+    </p>
+    <ul>
+      <li><b>Union:</b> Merges two subsets into a single set.</li>
+      <li>
+        <b>Find:</b> Determines the subset to which a particular element belongs
+        and can be used to check if two elements are in the same subset
+      </li>
+    </ul>
+
+    <p>
+      This data structure is particularly useful for solving dynamic
+      connectivity, such as determening whether there is a path between two
+      elements in a graph.
+    </p>
+
+    <p><b>How it works:</b></p>
+    <ol>
+      <li>
+        Each element initially belongs to its own subset, and a representative
+        (root) is assigned to each subset.
+      </li>
+      <li>
+        The <b>'Union'</b> operation merges two subsets by making the root of
+        one subset to the root of the other subset
+      </li>
+      <li>
+        The <b>'Find'</b> operation determines the representative of the subset
+        to which an element belongs by following the chain of parent pointers
+        until reaching the root.
+      </li>
+    </ol>
+    <script src="main.js"></script>
+  </body>
+</html>
